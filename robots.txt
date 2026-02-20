@@ -1,0 +1,162 @@
+# ===========================================================
+#  robots.txt — ImageTools (com.suhail.imagerstools)
+#  Generated for maximum SEO crawl efficiency
+#  Last updated: 2024
+# ===========================================================
+
+# ── Allow all major search engine bots ──────────────────────
+User-agent: *
+Allow: /
+
+# ── Google ───────────────────────────────────────────────────
+User-agent: Googlebot
+Allow: /
+Allow: /index.html
+Crawl-delay: 0
+
+User-agent: Googlebot-Image
+Allow: /
+
+User-agent: Googlebot-Mobile
+Allow: /
+
+User-agent: AdsBot-Google
+Allow: /
+
+# ── Bing / Microsoft ─────────────────────────────────────────
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 1
+
+User-agent: MSNBot
+Allow: /
+
+User-agent: MSNBot-Media
+Allow: /
+
+# ── Yahoo ────────────────────────────────────────────────────
+User-agent: Slurp
+Allow: /
+Crawl-delay: 1
+
+# ── DuckDuckGo ───────────────────────────────────────────────
+User-agent: DuckDuckBot
+Allow: /
+Crawl-delay: 1
+
+# ── Yandex ───────────────────────────────────────────────────
+User-agent: YandexBot
+Allow: /
+Crawl-delay: 2
+
+# ── Baidu ────────────────────────────────────────────────────
+User-agent: Baiduspider
+Allow: /
+Crawl-delay: 2
+
+# ── Apple ────────────────────────────────────────────────────
+User-agent: Applebot
+Allow: /
+
+# ── Social Media Crawlers ────────────────────────────────────
+User-agent: facebookexternalhit
+Allow: /
+
+User-agent: Twitterbot
+Allow: /
+
+User-agent: LinkedInBot
+Allow: /
+
+User-agent: WhatsApp
+Allow: /
+
+User-agent: TelegramBot
+Allow: /
+
+User-agent: Slackbot
+Allow: /
+
+# ── AI / LLM Crawlers ────────────────────────────────────────
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+# ── SEO Audit Tools (allow for own audits) ───────────────────
+User-agent: AhrefsBot
+Allow: /
+Crawl-delay: 5
+
+User-agent: SemrushBot
+Allow: /
+Crawl-delay: 5
+
+User-agent: MJ12bot
+Allow: /
+Crawl-delay: 5
+
+User-agent: DotBot
+Allow: /
+Crawl-delay: 5
+
+# ── Block bad / spam bots ────────────────────────────────────
+User-agent: MegaIndex
+Disallow: /
+
+User-agent: BLEXBot
+Disallow: /
+
+User-agent: DataForSeoBot
+Disallow: /
+
+User-agent: PetalBot
+Disallow: /
+
+User-agent: SplitSignalBot
+Disallow: /
+
+User-agent: Bytespider
+Disallow: /
+
+User-agent: AspiegelBot
+Disallow: /
+
+# ── Disallow private / system paths ─────────────────────────
+User-agent: *
+Disallow: /admin/
+Disallow: /private/
+Disallow: /tmp/
+Disallow: /cache/
+Disallow: /.git/
+Disallow: /.env
+Disallow: /config/
+Disallow: /logs/
+Disallow: /backup/
+Disallow: /cgi-bin/
+Disallow: /wp-admin/
+Disallow: /wp-login.php
+Disallow: /*?*utm_source=
+Disallow: /*?*utm_medium=
+Disallow: /*?*utm_campaign=
+Disallow: /*?*ref=
+Disallow: /*?*session=
+
+# ── Sitemap location ─────────────────────────────────────────
+Sitemap: https://play.google.com/store/apps/details?id=com.suhail.imagerstools/sitemap.xml
+
+# ── Host (preferred domain) ──────────────────────────────────
+Host: play.google.com
