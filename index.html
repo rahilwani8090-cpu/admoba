@@ -1753,51 +1753,135 @@
     }
 
     /* RESPONSIVE */
+
+    /* Large laptops / wide screens */
+    @media(max-width:1200px) {
+      .ai-inner { gap: 48px; }
+      .stats-inner { gap: 16px; }
+      .how-grid { gap: 16px; }
+    }
+
+    /* Tablets */
     @media(max-width:900px) {
       .ai-inner {
         grid-template-columns: 1fr;
         gap: 48px;
+        padding: 60px 20px;
       }
-
-      .ai-visual {
-        order: -1;
-      }
-
+      .ai-visual { order: -1; }
       .security-grid {
         grid-template-columns: 1fr;
         gap: 40px;
       }
-
-      .shield-visual {
-        display: none;
-      }
-
-      .footer-inner {
-        grid-template-columns: 1fr 1fr;
-      }
-
-      .how-line {
-        display: none;
-      }
+      .shield-visual { display: none; }
+      .footer-inner { grid-template-columns: 1fr 1fr; }
+      .how-line { display: none; }
+      .how-grid { grid-template-columns: repeat(2, 1fr); }
+      .hero { padding: 160px 20px 60px; }
+      .hero-h1 { font-size: clamp(2.4em, 8vw, 4.8em); }
+      .hero-sub { font-size: .95em; padding: 0 10px; }
+      .sec { padding: 60px 20px; }
+      .sec-h2 { font-size: clamp(2em, 4.5vw, 3.6em); }
+      .stats-inner { flex-wrap: wrap; gap: 12px; justify-content: center; }
+      .stat-item { min-width: 100px; }
+      .features-grid { grid-template-columns: repeat(2, 1fr); gap: 16px; }
+      .feat-card { padding: 24px; }
+      .tools-mega { grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 8px; }
+      .trust-badges { gap: 8px; }
+      .cta-h2 { font-size: clamp(2em, 5vw, 3.5em); }
+      .nav { padding: 0 16px; }
+      #ig-banner { font-size: .75em; padding: 7px 12px; }
     }
 
+    /* Small tablets / large phones - landscape */
+    @media(max-width:768px) {
+      .hero-btns { flex-direction: column; gap: 12px; align-items: center; }
+      .btn-primary, .btn-ghost { width: 100%; max-width: 320px; justify-content: center; }
+      .hero-stats { gap: 8px; }
+      .hstat { font-size: .7em; padding: 6px 12px; }
+      .features-grid { grid-template-columns: 1fr 1fr; }
+      .how-grid { grid-template-columns: repeat(2, 1fr); gap: 14px; }
+      .how-card { padding: 20px 16px; }
+      .how-num { font-size: 2.4em; }
+      .how-icon { font-size: 1.8em; }
+      .trust-h3 { font-size: clamp(2em, 5vw, 3em); }
+      .trust-sub { font-size: .9em; padding: 0 16px; }
+      .tbadge { padding: 10px 16px; font-size: .78em; }
+      .cta-sub { font-size: .9em; padding: 0 16px; }
+      .footer-inner { gap: 32px; }
+    }
+
+    /* Phones */
     @media(max-width:640px) {
-      .nav-links {
-        display: none;
-      }
+      .nav-links { display: none; }
+      .nav { top: 32px; }
+      .hero { padding: 140px 16px 50px; min-height: auto; }
+      .hero-h1 { font-size: clamp(2em, 10vw, 3em); }
+      .hero-sub { font-size: .88em; }
+      .hero-typewriter { font-size: .85em; }
+      .features-grid { grid-template-columns: 1fr; gap: 14px; }
+      .feat-card { padding: 20px; }
+      .feat-card h3 { font-size: .95em; }
+      .feat-card p { font-size: .82em; }
+      .tools-mega { grid-template-columns: repeat(2, 1fr); gap: 6px; }
+      .tool-chip { padding: 10px 12px; font-size: .75em; gap: 6px; }
+      .how-grid { grid-template-columns: 1fr 1fr; gap: 12px; }
+      .how-card { padding: 16px 12px; }
+      .how-num { font-size: 2em; }
+      .how-icon { font-size: 1.5em; margin-bottom: 10px; }
+      .how-card h4 { font-size: .85em; }
+      .how-card p { font-size: .75em; }
+      .footer-inner { grid-template-columns: 1fr; gap: 28px; }
+      .footer-desc { max-width: 100%; }
+      .footer-bottom { flex-direction: column; text-align: center; gap: 8px; }
+      .fp, .ai-float-badge { display: none; }
+      .sec { padding: 50px 16px; }
+      .sec-p { font-size: .92em; }
+      .stats-inner { gap: 8px; padding: 0 8px; }
+      .stat-item { min-width: 80px; }
+      .stat-num { font-size: 1.8em; }
+      .stat-label { font-size: .55em; }
+      .ai-device { border-radius: 20px; padding: 16px; }
+      .ai-inner { padding: 50px 16px; }
+      .marquee-section { padding: 40px 0; }
+      .marquee-label { font-size: .65em; margin-bottom: 20px; }
+      .security-grid { gap: 24px; }
+      .sec-list-item { gap: 12px; }
+      .trust-inner { padding: 48px 16px; }
+      .trust-badges { gap: 6px; }
+      .tbadge { padding: 8px 12px; font-size: .72em; }
+      .cta-section { padding: 60px 16px 40px; }
+      .cta-h2 { font-size: clamp(1.6em, 7vw, 2.5em); }
+      .cta-sub { font-size: .85em; }
+      #ig-banner { font-size: .7em; padding: 6px 10px; gap: 6px; }
+      #ig-banner svg { width: 14px; height: 14px; }
+    }
 
-      .features-grid {
-        grid-template-columns: 1fr;
-      }
-
-      .footer-inner {
-        grid-template-columns: 1fr;
-      }
-
-      .fp,
-      .ai-float-badge {
-        display: none;
-      }
+    /* Very small phones */
+    @media(max-width:400px) {
+      .hero { padding: 130px 12px 40px; }
+      .hero-h1 { font-size: 2em; }
+      .hero-sub { font-size: .82em; }
+      .hero-stats { gap: 6px; }
+      .hstat { font-size: .62em; padding: 5px 10px; }
+      .btn-primary { font-size: .88em; padding: 14px 20px; }
+      .btn-ghost { font-size: .88em; padding: 14px 20px; }
+      .sec-h2 { font-size: 1.8em; }
+      .features-grid { gap: 12px; }
+      .feat-card { padding: 16px; }
+      .tools-mega { grid-template-columns: 1fr 1fr; gap: 5px; }
+      .tool-chip { padding: 8px 10px; font-size: .7em; }
+      .how-grid { grid-template-columns: 1fr; gap: 10px; }
+      .stat-item { min-width: 60px; padding: 12px 6px; }
+      .stat-num { font-size: 1.4em; }
+      .stat-label { font-size: .5em; letter-spacing: 0.5px; }
+      .nav-inner { height: 52px; }
+      .nav-logo { font-size: 1.2em; }
+      .nav-cta { padding: 6px 14px; font-size: .72em; }
+      .footer-inner { padding: 32px 12px 24px; }
+      .ai-mini-grid { grid-template-columns: 1fr 1fr; gap: 6px; }
+      .ai-mini-card { padding: 8px; font-size: .65em; }
+      #ig-banner { font-size: .62em; }
     }
   </style>
 </head>
